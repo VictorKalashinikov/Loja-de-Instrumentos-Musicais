@@ -509,3 +509,30 @@ RESPONSIVIDADE
 #maps iframe {
     max-width: 100%;
 }
+
+/*Redes Sociais*/
+
+section#redes-sociais img {
+    width: 50px;
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+
+section#redes-sociais {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+section#redes-sociais a {
+    text-decoration: none;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 0, 0, 0.604);
+    transform: translate(-3px, -3px);
+}
+
+section#redes-sociais h1 {
+    padding: 30px;
+}
