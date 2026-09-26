@@ -514,8 +514,9 @@ RESPONSIVIDADE
 
 section#redes-sociais img {
     width: 50px;
-    margin-left: 50px;
+    margin-left: 60px;
     box-sizing: border-box;
+    border-radius: 50%;
 }
 
 section#redes-sociais {
