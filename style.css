@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   }
 
 body {
@@ -336,8 +337,6 @@ font-weight: normal;
 
 .button:hover {
 background: #b00000;
-
-
 color: white;
 
 
@@ -536,4 +535,88 @@ section#redes-sociais img:hover {
 
 section#redes-sociais h1 {
     padding: 30px;
+}
+
+section#escolha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagens/wallpaper.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+div#escolhaBox {
+    margin-top: 10vh;
+    background-color: black;
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+    border: 2px solid #960203;
+    border-radius: 15px;
+}
+
+div#escolhaBox h1 {
+    padding: 20px;
+}
+
+div#escolhaBox a {
+    margin: 30px;
+}
+
+section#criarConta {
+    background-image: url('imagens/wallpaperCriarConta.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#criarContaBox {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: black;
+    width: 600px;
+    padding: 30px;
+    border: 2px solid #960203;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div#criarContaBox h1, p{
+    padding: 30px;
+}
+
+div#criarContaBox form {
+    text-align: left;
+}
+
+div#criarContaBox a {
+    text-decoration: none;
+    color: white;
+}
+
+div#criarContaBox a#single:hover {
+    color: #960203;
+    text-decoration: underline;
+}
+
+input.abtn {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: 2px solid #960203;
+    cursor: pointer;
+}
+
+p.center {
+    text-align: center;
+}
+
+input.abtn:hover {
+    background: #b00000;
+    color: white;
+    transition: background-color 0.3s ease;
 }
