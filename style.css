@@ -1,16 +1,18 @@
-/* RESET */
+/* =========================
+RESET
+========================= */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-background: #050505;
-color: white;
-font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* =========================
@@ -18,27 +20,22 @@ HERO
 ========================= */
 
 .hero {
-position: relative;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.25) 55%,
+            rgba(0, 0, 0, 0.05) 100%
+        ),
+        url("imagens/hero.png");
 
-width: 100%;
-min-height: 100vh;
-
-background-image:
-    linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.75) 0%,
-        rgba(0, 0, 0, 0.25) 55%,
-        rgba(0, 0, 0, 0.05) 100%
-    ),
-    url("imagens/hero.png");
-
-background-size: cover;
-background-position: center;
-
-overflow: hidden;
-
-
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
 /* =========================
@@ -46,22 +43,17 @@ HEADER
 ========================= */
 
 .header {
-position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-top: 0;
-left: 0;
-
-width: 100%;
-
-padding: 25px 5%;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-z-index: 10;
-
+    z-index: 10;
 }
 
 /* =========================
@@ -69,39 +61,24 @@ LOGO
 ========================= */
 
 .logo {
-display: flex;
-align-items: center;
-
-
-gap: 22px;
-
-
+    display: flex;
+    align-items: center;
+    gap: 22px;
 }
 
 .logo-img {
-width: 100px;
-height: auto;
-
-
-display: block;
-
-
+    width: 100px;
+    height: auto;
+    display: block;
 }
 
 .logo-title {
-color: #eee;
-
-
-font-family: Georgia, serif;
-
-font-size: 25px;
-font-weight: bold;
-
-letter-spacing: 8px;
-
-margin: 0;
-
-
+    color: #eee;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin: 0;
 }
 
 /* =========================
@@ -109,37 +86,24 @@ margin: 0;
 ========================= */
 
 .logo-door {
-position: relative;
-
-
-width: 28px;
-height: 48px;
-
-border: 3px solid #b40000;
-
-display: block;
-
-
+    position: relative;
+    width: 28px;
+    height: 48px;
+    border: 3px solid #b40000;
+    display: block;
 }
 
 /* DETALHE INTERNO DA PORTA */
 
 .logo-door::before {
-content: "";
-
-
-position: absolute;
-
-width: 15px;
-height: 38px;
-
-top: 2px;
-left: 2px;
-
-border-left: 2px solid #b40000;
-border-bottom: 2px solid #b40000;
-
-
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 38px;
+    top: 2px;
+    left: 2px;
+    border-left: 2px solid #b40000;
+    border-bottom: 2px solid #b40000;
 }
 
 /* =========================
@@ -147,56 +111,38 @@ NAV
 ========================= */
 
 .nav {
-display: flex;
-align-items: center;
-
-
-gap: 50px;
-
-
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .nav a {
-position: relative;
-
-
-color: #aaa;
-
-text-decoration: none;
-
-font-size: 12px;
-letter-spacing: 3px;
-
-transition: 0.3s;
-
-
+    position: relative;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: 0.3s;
 }
 
 .nav a:hover {
-color: white;
+    color: white;
 }
 
 /* ITEM ATIVO */
 
 .nav .active {
-color: #d00000;
+    color: #d00000;
 }
 
 .nav .active::after {
-content: "";
-
-
-position: absolute;
-
-left: 0;
-bottom: -13px;
-
-width: 100%;
-height: 2px;
-
-background: #d00000;
-
-
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    width: 100%;
+    height: 2px;
+    background: #d00000;
 }
 
 /* =========================
@@ -204,17 +150,11 @@ CONTEÚDO
 ========================= */
 
 .hero-content {
-position: absolute;
-
-
-top: 50%;
-left: 6.5%;
-
-transform: translateY(-42%);
-
-z-index: 5;
-
-
+    position: absolute;
+    top: 50%;
+    left: 6.5%;
+    transform: translateY(-42%);
+    z-index: 5;
 }
 
 /* =========================
@@ -222,35 +162,22 @@ SUBTÍTULO
 ========================= */
 
 .subtitle {
-display: flex;
-align-items: center;
-
-
-gap: 28px;
-
-margin-bottom: 25px;
-
-
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 25px;
 }
 
 .subtitle span {
-width: 50px;
-height: 2px;
-
-
-background: #a90000;
-
+    width: 50px;
+    height: 2px;
+    background: #a90000;
 }
 
 .subtitle p {
-font-size: 12px;
-
-
-letter-spacing: 7px;
-
-color: #ccc;
-
-
+    font-size: 12px;
+    letter-spacing: 7px;
+    color: #ccc;
 }
 
 /* =========================
@@ -258,19 +185,12 @@ TÍTULO PRINCIPAL
 ========================= */
 
 .hero-title {
-font-family: Georgia, "Times New Roman", serif;
-
-font-size: 30px;
-
-line-height: 0.95;
-
-letter-spacing: 7px;
-
-font-weight: bold;
-
-margin-bottom: 30px;
-
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 0.95;
+    letter-spacing: 7px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 /* =========================
@@ -278,18 +198,11 @@ DESCRIÇÃO
 ========================= */
 
 .description {
-color: #bcbcbc;
-
-
-font-size: 16px;
-
-line-height: 1.8;
-
-letter-spacing: 3px;
-
-margin-bottom: 35px;
-
-
+    color: #bcbcbc;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
 }
 
 /* =========================
@@ -297,154 +210,51 @@ BOTÃO
 ========================= */
 
 .button {
-display: inline-flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 16px 22px;
+    min-width: 250px;
 
-
-align-items: center;
-justify-content: space-between;
-
-gap: 35px;
-
-padding: 16px 22px;
-
-min-width: 250px;
-
-border: 1px solid #b00000;
-
-color: #ddd;
-
-text-decoration: none;
-
-font-size: 11px;
-
-letter-spacing: 3px;
-
-transition: 0.3s;
-
-
+    border: 1px solid #b00000;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    transition: 0.3s;
 }
 
 .button strong {
-color: #d00000;
-
-
-font-size: 24px;
-
-font-weight: normal;
-
-
+    color: #d00000;
+    font-size: 24px;
+    font-weight: normal;
 }
 
 .button:hover {
-background: #b00000;
-color: white;
-
-
+    background: #b00000;
+    color: white;
 }
 
 .button:hover strong {
-color: white;
+    color: white;
 }
 
 /* =========================
-RESPONSIVIDADE
+CONFIANÇA
 ========================= */
-
-@media (max-width: 800px) {
-
-
-.header {
-    padding: 20px 6%;
-}
-
-.logo {
-    gap: 12px;
-}
-
-.logo-img {
-    width: 70px;
-}
-
-.logo-title {
-    font-size: 18px;
-    letter-spacing: 5px;
-}
-
-.logo-door {
-    width: 20px;
-    height: 35px;
-}
-
-.nav {
-    gap: 18px;
-}
-
-.nav a {
-    font-size: 9px;
-    letter-spacing: 1px;
-}
-
-.hero-content {
-    left: 7%;
-    right: 7%;
-}
-
-.subtitle {
-    gap: 12px;
-}
-
-.subtitle span {
-    width: 30px;
-}
-
-.subtitle p {
-    font-size: 9px;
-    letter-spacing: 3px;
-}
-
-.hero-title {
-    font-size: 48px;
-}
-
-.description {
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-}
-
-@media (max-width: 550px) {
-
-
-.header {
-    flex-direction: column;
-
-    gap: 25px;
-}
-
-.nav {
-    gap: 15px;
-}
-
-.hero-content {
-    top: 58%;
-}
-
-.hero-title {
-    font-size: 42px;
-}
-
-
-}
 
 #confianca {
     background-color: #242321;
     color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+
     padding: 20px;
+    text-align: center;
 }
 
 #confianca img {
@@ -452,9 +262,9 @@ RESPONSIVIDADE
     height: auto;
 }
 
-#confianca {
-    text-align: center;
-}
+/* =========================
+MAPS
+========================= */
 
 .inteiro {
     min-height: 100vh;
@@ -465,9 +275,11 @@ RESPONSIVIDADE
 
 #maps {
     padding: 60px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     text-align: right;
     gap: 40px;
 }
@@ -482,6 +294,7 @@ RESPONSIVIDADE
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     gap: 28px;
     margin-bottom: 25px;
     width: auto;
@@ -509,7 +322,9 @@ RESPONSIVIDADE
     max-width: 100%;
 }
 
-/*Redes Sociais*/
+/* =========================
+REDES SOCIAIS
+========================= */
 
 section#redes-sociais img {
     width: 50px;
@@ -537,21 +352,30 @@ section#redes-sociais h1 {
     padding: 30px;
 }
 
+/* =========================
+ESCOLHA
+========================= */
+
 section#escolha {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('imagens/wallpaper.png');
+
+    background-image: url("imagens/wallpaper.png");
     background-size: cover;
+
     height: 100vh;
 }
 
 div#escolhaBox {
     margin-top: 10vh;
+
     background-color: black;
     padding: 30px;
     width: 500px;
+
     text-align: center;
+
     border: 2px solid #960203;
     border-radius: 15px;
 }
@@ -564,49 +388,70 @@ div#escolhaBox a {
     margin: 30px;
 }
 
+/* =========================
+CRIAR CONTA
+========================= */
+
 section#criarConta {
-    background-image: url('imagens/wallpaperCriarConta.png');
+    background-image: url("imagens/wallpaperCriarConta.png");
     background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div#criarContaBox {
+div#criarContaBox,
+div#loginBox {
     margin-top: 150px;
     margin-bottom: 150px;
+
     background-color: black;
     width: 600px;
     padding: 30px;
+
     border: 2px solid #960203;
     text-align: center;
     border-radius: 15px;
 }
 
-div#criarContaBox h1, p{
+div#criarContaBox h1,
+div#criarContaBox p,
+div#loginBox h1,
+div#loginBox p {
     padding: 30px;
 }
 
-div#criarContaBox form {
+div#criarContaBox form,
+div#loginBox form {
     text-align: left;
 }
 
-div#criarContaBox a {
+div#criarContaBox a,
+div#loginBox a {
     text-decoration: none;
     color: white;
 }
 
-div#criarContaBox a#single:hover {
+div#criarContaBox a#single:hover,
+div#loginBox a#single:hover {
     color: #960203;
     text-decoration: underline;
 }
 
+/* =========================
+BOTÃO
+========================= */
+
 input.abtn {
     background-color: black;
     color: white;
+
     font-size: 16px;
     font-weight: bold;
+
     padding: 12px 24px;
+
     border: 2px solid #960203;
     cursor: pointer;
 }
@@ -621,7 +466,41 @@ input.abtn:hover {
     transition: background-color 0.3s ease;
 }
 
+/* =========================
+LOGIN
+========================= */
+
 section#login {
-    background-image: url(imagens/loginWallpaper.png);
+    background-image: url("imagens/loginWallpaper.png");
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 100vh;
+}
+
+section#login button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 35px;
+    padding: 16px 22px;
+    min-width: 250px;
+
+    border: 1px solid #b00000;
+    color: black;
+
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+section#login button:hover {
+    background: #b00000;
+    color: white;
 }
