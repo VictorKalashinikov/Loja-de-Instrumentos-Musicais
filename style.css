@@ -456,7 +456,7 @@ input.abtn {
     cursor: pointer;
 }
 
-p.center {
+.center {
     text-align: center;
 }
 
@@ -491,16 +491,21 @@ section#login button {
     min-width: 250px;
 
     border: 1px solid #b00000;
-    color: black;
+    color: white;
 
     text-decoration: none;
     font-size: 11px;
     letter-spacing: 3px;
 
     transition: 0.3s;
+    background-color: black;
 }
 
 section#login button:hover {
     background: #b00000;
     color: white;
+}
+
+div#loginBox {
+    width: 400px;
 }
